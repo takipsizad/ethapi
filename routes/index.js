@@ -2,8 +2,9 @@ var express = require('express');
 var router = express.Router();
 const path = require('path');
 var Web3 = require('web3');
-var isEmpty = require('lodash.isempty');
 var web3 = new Web3(process.env.wsurl);
+var Accounts = require('web3-eth-accounts');
+var accounts = new Accounts(process.env.wsurl);
 var oof = 'i messed up or you messed up dont crash my site smh '
 
 router.get('/', function(req, res) {
@@ -38,5 +39,10 @@ router.get('/api/transactioninfo', function(req, res, next) {
   web3.eth.getTransaction(req.query.hash).then(result => { 
     res.jsonp({result})
   }).catch(err => {res.jsonp({oof})});
+});
+
+router.get('/api/createacc', function(req, res, next) {
+  var acc = web3.eth.accounts.create()
+  res.jsonp({acc})
 });
 module.exports = router;
