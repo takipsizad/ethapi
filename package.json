@@ -20,7 +20,7 @@
     "express-slow-down": "^1.4.0",
     "express-useragent": "^1.0.15",
     "http-errors": "^1.8.0",
-    "jade": "^0.29.0",
+    "jade": "^1.11.0",
     "lodash.isempty": "^4.4.0",
     "mineflayer": "^3.0.0",
     "morgan": "^1.10.0",
