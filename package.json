@@ -11,7 +11,7 @@
     "bytes": "^3.1.0",
     "cookie-parser": "^1.4.5",
     "debug": "~4.3.1",
-    "discord-inv": "^1.0.4",
+    "discord-inv": "^1.1.0",
     "discord-webhook-node": "^1.1.8",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
