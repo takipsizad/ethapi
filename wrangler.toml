@@ -1,6 +1,0 @@
-name = "ethapi"
-type = "javascript"
-account_id = "205f31ba9c9cdd952ceb31f42dee7000"
-workers_dev = true
-route = ""
-zone_id = ""
